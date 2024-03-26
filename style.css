@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100vh;
+    width: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:#212121;
+    margin: 0;
+  }
+  
+  #main-section {
+    background-color: black;
+    height: 50%;
+    width: 80vw;
+    max-width: 300px;
+    border: none;
+    box-shadow: 0 0 10px;
+    
+  }
+  
+
+  button.numbers[value="0"] {
+    width: 8rem;
+  }
+  button.numbers[value="AC"] {
+    background-color: grey;
+  }
+  button.numbers[value="DEL"] {
+    background-color: grey;
+  }
+  button.numbers[value="%"] {
+    background-color: grey;
+  }
+  button.numbers[value="/"] {
+    background-color: orange;
+  }
+  button.numbers[value="*"] {
+    background-color: orange;
+  }
+  button.numbers[value="-"] {
+    background-color: orange;
+  }
+  button.numbers[value="+"] {
+    background-color: orange;
+  }
+  button.numbers[value="="] {
+    background-color: orange;
+  }
+  .numbers {
+    width: 20%;
+    height: 3rem;
+    margin: .2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #313131;
+    border: 1px solid #ccc;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    color: #fff;
+  }
+  
+  .numbers:hover {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  
+  #input {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4rem;
+    border: none;
+    background-color:rgba(0, 0, 0, 0.899);
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  @media only screen and (min-width: 600px) {
+    #main-section {
+        height: 60vh;
+    }
+    .numbers{
+        margin-bottom: .8rem;
+        margin-top: .5rem;
+    }
+    
+}
+  @media only screen and (max-width: 1300px) {
+    #main-section {
+        height: 68vh;
+    }
+    .numbers{
+        margin-bottom: .8rem;
+        margin-top: .5rem;
+    }
+    
+}
+
